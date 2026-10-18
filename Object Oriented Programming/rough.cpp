@@ -13,7 +13,8 @@ public:
         std::cout << "I am " << Age << " years old" << std::endl;
         std::cout << std::endl;
     }
-    Employee(string name, string company, int age){
+    Employee(string name, string company, int age)
+    {
         Name = name;
         Company = company;
         Age = age;
