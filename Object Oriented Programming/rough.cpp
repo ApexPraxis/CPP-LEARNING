@@ -19,7 +19,7 @@ int main()
     emp1.Name = "John";
     emp1.Company = "Google";
     emp1.Age = 30;
-   emp1.IntroduceYourself();
+    emp1.IntroduceYourself();
 
     return 0;
 }
