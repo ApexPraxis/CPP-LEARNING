@@ -1,10 +1,30 @@
-#include<iostream>
-int main(){
-/*Inheritance in C++ is a core Object-Oriented Programming (OOP) feature 
-that allows a new class (derived/child class)
- to inherit attributes and behaviors (data members and member functions)
-  from an existing class (base/parent class).
- */
+#include <iostream>
+using std::string;
+class Employee
+{
+    public:
+    string Name;
+    string Company;
+    int Age;
+    void IntroduceYourself()
+    {
+        std::cout << "My name is " << Name << std::endl;
+        std::cout << "I work at " << Company << std::endl;
+        std::cout << "I am " << Age << " years old" << std::endl;
+        std::cout << std::endl;
+    }
+    Employee(string name, string company, int age){
+        Name = name;
+        Company = company;
+        Age = age;
+    }
+};
+int main()
+{
+    Employee emp1 = Employee("John", "Google", 30);
+    emp1.IntroduceYourself();
 
+    Employee emp2 = Employee("Jane", "Amazon", 32);
+    emp2.IntroduceYourself();
     return 0;
 }
