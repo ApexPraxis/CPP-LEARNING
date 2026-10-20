@@ -22,10 +22,6 @@ public:
 };
 int main()
 {
-    School school1("Sukuna Secondary School", "Sundarharaincha-10, Morang", 2029);
-    school1.introduceYourSchool();
-    School school2("Shree Indrapur English Boarding School", "Sundarharaincha-12, Morang", 2064);
-    school2.introduceYourSchool();
-
+    School school1("St. Xavier's College", "Kathmandu, Nepal", 1980);
     return 0;
 }
