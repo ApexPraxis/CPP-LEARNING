@@ -55,7 +55,7 @@ public:
     {
         std::cout << "My school's name is: " << Name << '\n';
         std::cout << "My school's address is: " << Address << '\n';
-        std::cout << "My school was established in: "     << Estd << " BS\n\n";
+        std::cout << "My school was established in: " << Estd << " BS\n\n";
     }
 
     School(string name, string address, int estd)
@@ -111,7 +111,7 @@ public:
 
     void PrepareLesson()
     {
-        std::cout << getName() << " is preparing "  << Subject << " lesson\n";
+        std::cout << getName() << " is preparing " << Subject << " lesson\n";
     }
     void Work()
     {
@@ -119,7 +119,8 @@ public:
     }
 };
 
-int main()
+int main() // the most common use of polymorphism is when a parent class reference
+//  is used to refer to a child class object.
 {
     Boarding b("Subijimur", "Biratchowk", 2054, "English Boarding");
     Teacher t("Jack", "Biratchowk", 35, "Math");
@@ -127,5 +128,5 @@ int main()
     b.Work();
     t.Work();
 
-        return 0;
+    return 0;
 }
