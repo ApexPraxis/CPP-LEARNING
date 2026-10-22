@@ -60,7 +60,7 @@ public:
     }
 };
 
-class Boarding : School
+class Boarding : public School
 {
 public:
     string BoardingType;
@@ -71,12 +71,15 @@ public:
     }
     void FixBug()
     {
-        std::cout << getName() << " teaches as a " << BoardingType << " School";
+        std::cout << getName() << " teaches as a " << BoardingType << " School" << std::endl;
     }
 };
 int main()
 {
     Boarding b = Boarding("Subijimur", "Biratchowk", 2054, "English Boarding");
     b.FixBug();
+    b.FixBug();
+    b.FixBug();
+    b.AskForPromotion();
     return 0;
 }
