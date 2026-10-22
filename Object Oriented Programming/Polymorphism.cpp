@@ -122,8 +122,5 @@ int main()
     b.Work();
     t.Work();
 
-    b.AskForPromotion();
-    t.AskForPromotion();
-
-    return 0;
+        return 0;
 }
