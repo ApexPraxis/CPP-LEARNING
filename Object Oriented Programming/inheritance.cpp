@@ -50,7 +50,7 @@ public:
         Name = name;
         Address = address;
         Estd = estd;
-    }   
+    }
     void AskForPromotion()
     {
         if (Estd > 2050)
@@ -60,18 +60,19 @@ public:
     }
 };
 
-class Boarding : School {
+class Boarding : School
+{
 public:
-  string BoardingType;
-  Boarding(string name, string address, int estd, string Type)
-: School(name, address, estd)
-  {
-BoardingType = Type;
-
-  }
- void FixBug(){
-    std::cout << getName() << " teaches as a " << BoardingType << " School";
- }
+    string BoardingType;
+    Boarding(string name, string address, int estd, string Type)
+        : School(name, address, estd)
+    {
+        BoardingType = Type;
+    }
+    void FixBug()
+    {
+        std::cout << getName() << " teaches as a " << BoardingType << " School";
+    }
 };
 int main()
 {
