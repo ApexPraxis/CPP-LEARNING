@@ -8,8 +8,9 @@ class AbstractEmployee
 
 class School : AbstractEmployee
 {
-private:
+    protected:
     string Name;
+private:
     string Address;
     int Estd;
 
@@ -81,7 +82,7 @@ public:
     string Subject;
     void PrepareLesson()
     {
-        std::cout << getName() << " is preparing " << Subject << " lesson" << std::endl;
+        std::cout << Name << " is preparing " << Subject << " lesson" << std::endl;
     }
     Teacher(string name, string address, int estd, string subject)
         : School(name, address, estd)
