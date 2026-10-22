@@ -50,7 +50,7 @@ public:
         Name = name;
         Address = address;
         Estd = estd;
-    }
+    }   
     void AskForPromotion()
     {
         if (Estd > 2050)
@@ -59,12 +59,26 @@ public:
             std::cout << Name << ", no promotion for you!" << std::endl;
     }
 };
+
+class Boarding : School {
+public:
+  string BoardingType;
+  Boarding(string name, string address, int estd, string Type)
+: School(name, address, estd)
+  {
+BoardingType = Type;
+
+  }
+ void FixBug(){
+    std::cout << getName() << " teaches as a " << BoardingType << " School";
+ }
+};
 int main()
 {
     School school1("Sukuna Secondary School", "Sundarharaincha-10, Morang", 2029);
     School school2("Shree Indrapur English Boarding School", "Sundarharaincha-12, Morang", 2064);
-    school1.AskForPromotion();
-    school2.AskForPromotion();
 
+    Boarding b = Boarding("Subijimur", "Biratchowk", 2054, "English Boarding");
+    b.FixBug();
     return 0;
 }
