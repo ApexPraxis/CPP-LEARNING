@@ -71,7 +71,7 @@ public:
             std::cout << Name << ", no promotion for you!\n";
     }
 
-    void Work()
+    virtual void Work()
     {
         std::cout << Name << " is working hard!\n";
     }
@@ -125,8 +125,11 @@ int main() // the most common use of polymorphism is when a parent class referen
     Boarding b("Subijimur", "Biratchowk", 2054, "English Boarding");
     Teacher t("Jack", "Biratchowk", 35, "Math");
 
-    b.Work();
-    t.Work();
+    School *s1 = &b;
+    School *s2 = &t;
+
+    s1->Work();
+    s2->Work();
 
     return 0;
 }
