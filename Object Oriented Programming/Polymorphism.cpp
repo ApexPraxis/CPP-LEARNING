@@ -55,8 +55,7 @@ public:
     {
         std::cout << "My school's name is: " << Name << '\n';
         std::cout << "My school's address is: " << Address << '\n';
-        std::cout << "My school was established in: "
-                  << Estd << " BS\n\n";
+        std::cout << "My school was established in: "     << Estd << " BS\n\n";
     }
 
     School(string name, string address, int estd)
@@ -91,8 +90,11 @@ public:
 
     void FixBug()
     {
-        std::cout << getName() << " teaches as a "
-                  << BoardingType << " school\n";
+        std::cout << getName() << " teaches as a " << BoardingType << " school\n";
+    }
+    void Work()
+    {
+        std::cout << Name << " is working as a " << BoardingType << "!\n";
     }
 };
 
@@ -109,8 +111,11 @@ public:
 
     void PrepareLesson()
     {
-        std::cout << getName() << " is preparing "
-                  << Subject << " lesson\n";
+        std::cout << getName() << " is preparing "  << Subject << " lesson\n";
+    }
+    void Work()
+    {
+        std::cout << Name << " is working as a Teacher!\n";
     }
 };
 
