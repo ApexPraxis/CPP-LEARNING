@@ -75,26 +75,23 @@ public:
     }
 };
 
-class Teacher:public School {
-    public:
-   string Subject;
-   void PrepareLesson(){
-    std::cout<< getName() << " is preparing " << Subject << " lesson" << std::endl;
-   }
-   Teacher(string name, string address, int estd, string subject)
-   :School(name, address, estd)
-   {
-    Subject = subject;
-
-
-   }
+class Teacher : public School
+{
+public:
+    string Subject;
+    void PrepareLesson()
+    {
+        std::cout << getName() << " is preparing " << Subject << " lesson" << std::endl;
+    }
+    Teacher(string name, string address, int estd, string subject)
+        : School(name, address, estd)
+    {
+        Subject = subject;
+    }
 };
 int main()
 {
     Boarding b = Boarding("Subijimur", "Biratchowk", 2054, "English Boarding");
-    b.FixBug();
-    b.FixBug();
-    b.FixBug();
     Teacher t = Teacher("Jack", "Biratchowk", 35, "Math");
     t.PrepareLesson();
     return 0;
