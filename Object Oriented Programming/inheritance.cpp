@@ -76,9 +76,6 @@ public:
 };
 int main()
 {
-    School school1("Sukuna Secondary School", "Sundarharaincha-10, Morang", 2029);
-    School school2("Shree Indrapur English Boarding School", "Sundarharaincha-12, Morang", 2064);
-
     Boarding b = Boarding("Subijimur", "Biratchowk", 2054, "English Boarding");
     b.FixBug();
     return 0;
